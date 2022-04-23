@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        /* 
+        # = id
+        . = classe
+        : = pseudo class
+        :: = pseudo element
+        > = clidren filho
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial::before {
+            content: ' ↤';
+        }
+        .especial::after {
+            content: '↦ ';
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/desafio-imagem-flexivel.pdf" target="_blank">repositorio github</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="especial">canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" class="especial">site do curso em video</a></li>
+
+
+
+    </ul>
+</body>
+</html>
